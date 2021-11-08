@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#headerLogoImg {
+    width: 10%;
+}
+
+
+#headerTechLink {
+    text-decoration: none;
+    color: black;
+    font-size: 45px;
+    font-family: 'Red Hat Mono', monospace;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+#searchBar {
+    width: 25%;
+    height: 20px;
+}
+
+
+#navLinkList {
+    display: flex;
+    list-style: none;
+}
+
+
+#navLinkList a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 25px;
+    margin-right: 35px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+#mainContent {
+    display: flex;
+}
+
+#mainContent article {
+    margin-top: 8%;
+    margin-left: 2.5%;
+}
+
+#mainContent h1 {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 45px;
+    padding: 20px;
+}
+
+#homepageContentHeader {
+    background-color: rgb(78,110,129, 0.3);
+    border-radius: 1%;
+}
+
+
+#caroselleContainer {
+    width: 750px;
+    height: 400px;
+    background-color: black;
+    margin-left: 5%;
+    margin-top: 5%;
+    overflow: hidden;
+    border-radius: 1%;
+    box-shadow: 3px 3px 3px black;
+}
+
+#imagesContainer {
+    width: 500%;
+    display: flex;
+    flex-wrap: wrap;
+    animation: caroselle 25s infinite;
+    position: relative;
+}
+
+.caroselleImgs {
+    width: 20%;
+}
+
+
+@keyframes caroselle {
+    0%{left : -0%;}
+    25%{left : -100%;}
+    50%{left : -200%;}
+    75%{left : -300%;}
+    100%{left : -400%;}
+}

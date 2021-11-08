@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#headerLogoImg {
+    width: 10%;
+}
+
+
+#headerTechLink {
+    text-decoration: none;
+    color: black;
+    font-size: 45px;
+    font-family: 'Red Hat Mono', monospace;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+#searchBar {
+    width: 25%;
+    height: 20px;
+}
+
+
+#navLinkList {
+    display: flex;
+    list-style: none;
+}
+
+
+#navLinkList a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 25px;
+    margin-right: 35px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+
+#mainContentHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#mainContentHeader h1 {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 35px;
+}
+
+
+#mainContentHeader div label {
+    font-size: 25px;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+#moviesDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.movieData {
+    width: 27%;
+    height: 450px;
+    border: 1px solid rgb(78,110,129, 0.7);
+    border-radius: 1.5%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../media/offwhite\ background.jfif);
+    opacity: 5;
+}
+
+.movieData img {
+    width: 85%;
+    height: 70%;
+    border-radius: 2.5%;
+    box-shadow: 3px 3px 3px rgb(78,110,129, 0.7);
+}
+
+
+.movieData h3{
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 20px;
+}
+
+.movieData p {
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 500;
+}
+
+#expendBtn a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 16px;
+}
