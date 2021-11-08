@@ -53,7 +53,6 @@ header {
 
 #mainContent article {
     margin-top: 8%;
-    margin-left: 2.5%;
 }
 
 #mainContent h1 {
@@ -79,7 +78,6 @@ header {
     width: 750px;
     height: 400px;
     background-color: black;
-    margin-left: 5%;
     margin-top: 5%;
     overflow: hidden;
     border-radius: 1%;
@@ -99,10 +97,30 @@ header {
 }
 
 
-@keyframes caroselle {
+/* @keyframes caroselle {
     0%{left : -0%;}
     25%{left : -100%;}
     50%{left : -200%;}
     75%{left : -300%;}
     100%{left : -400%;}
+} */
+
+
+.carosellBtns {
+    width: 3.5%;
+    height: 50px;
+}
+
+#leftBtn {
+    position: relative;
+    top: 250px;
+    left: 60px;
+    z-index: 1000;
+}
+
+#rightBtn {
+    position: relative;
+    top: 250px;
+    right: 60px;
+    z-index: 1000;
 }
