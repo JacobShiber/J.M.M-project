@@ -25,14 +25,14 @@ async function printDataFromApi(api, target) {
 
 async function getMovieById(id) {
     try {
-        return await fetch(`http://moviesmern.herokuapp.com/movies/movie/${id}`).then(res => res.json()).then(res => console.log(res));
+        return await fetch(`http://moviesmern.herokuapp.com/movies/movie/:id${id}`).then(res => res.json()).then(res => console.log(res));
     } catch (error) {
         return error;
     }
 }
 
 
-
+getMovieById("6182d48e7df14206307896b8")
 
 printDataFromApi(api, allMoviesEP)
     .then((res) => {

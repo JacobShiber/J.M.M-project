@@ -65,33 +65,48 @@ header {
     font-family: 'Red Hat Mono', monospace;
 }
 
-#moviesDetails {
-    width: 1000px;
-    margin-left: 12.5%;
+#tableContainer {
+    height: 350px;
+    width: 1275px;
+    overflow: auto;
     margin-top: 5%;
-    border: 1px solid rgb(255, 255, 255);
-    border-collapse: collapse;
-    border-radius: 5%;
+    margin-left: 3.5%;
 }
 
-#moviesDetails  thead tr  td {
+#moviesDetails {
+    width: 100%;
+    padding-right: 90px;
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    border-radius: 1%;
+    
+}
+
+#moviesDetails  thead,  td   {
     border: 1px solid rgb(255, 255, 255);
     border-collapse: collapse;
     padding: 1.5%;
-    border-radius: 5%;
-    background-color: rgb(78,110,129, 0.3);
+    background-color: rgb(78,110,129, 0.1);
     font-family: 'Red Hat Mono', monospace;
-    font-size: 20px;
-    width: 20%;
+    font-size: 15px;
+    width: 10%;
 }
 
 
+#moviesDetails  thead {
+    background-color: rgb(78,110,129, 0.3);
+}
 
-.moviesInfo {
+
+#moviesDetails td {
+    width: 20%;
+}
+
+.infoDetails {
+   overflow:auto;
+    width: 50px;
+    height: 50px; 
     border: 1px solid rgb(255, 255, 255);
     border-collapse: collapse;
-    border-radius: 5%;
-    background-color: rgb(78,110,129, 0.1);
-    font-family: 'Red Hat Mono', monospace;
-    font-size: 20px;
+    padding: 1.5%;
 }
