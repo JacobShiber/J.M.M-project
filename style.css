@@ -67,6 +67,13 @@ header {
     border-radius: 1%;
 }
 
+#mainContent article p {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 25px;
+    width: 400px;
+    margin-top: 2.5%;
+}
+
 
 #caroselleContainer {
     width: 750px;
