@@ -23,7 +23,7 @@ rightBtn.onclick = () => {
         imagesContainer.style.left = `${pixelCounter--}%`;
         if (pixelCounter < Number(`-${containerPxTarget[target]}`)) {
             clearInterval(sliderId)
+            
         };
     }, 5);
-
 };
