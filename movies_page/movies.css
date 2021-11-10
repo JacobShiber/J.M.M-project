@@ -70,6 +70,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 5%;
+    background-color: white;
 }
 
 .movieData {
@@ -82,7 +83,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(../media/offwhite\ background.jfif);
+    background: url(../media/offwhite_background.jfif);
     opacity: 5;
 }
 
@@ -109,4 +110,41 @@ header {
     color: black;
     font-family: 'Red Hat Mono', monospace;
     font-size: 16px;
+}
+
+#singleMovieDisplay {
+    font-family: 'Red Hat Mono', monospace;
+    width: 70%;
+    height: 600px;
+    overflow: auto;
+    display: flex;
+    margin-left: 15%;
+    position: relative;
+    top: -450px;
+    background : white;
+    z-index: -1000;
+}
+
+#infoPopImg {
+    height: 500px;
+    margin-left: 2.5%;
+    margin-top: 5.5%;
+    box-shadow: 3px 3px 3px;
+}
+
+
+#singleMovieDisplay div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.5%;
+    margin-top: 4.5%;
+}
+
+#backBtn {
+    width: 10%;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    left: -25px;
+    z-index: 1000;
 }
