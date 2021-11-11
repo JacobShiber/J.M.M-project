@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./newMovie.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img id="headerLogoImg" src="../media/indi_com_logo.jfif" alt="indicomLogo">
+        <a id="headerTechLink" href="https://www.tech-career.org/">Tech - Career</a>
+        <nav>
+            <ul id="navLinkList">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../movies_page/movies.html">Movies</a></li>
+                <li><a href="../info_page/info.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="addingForm">
+            <h1>Add a new movie !</h1><br><br>
+            <label>Movie Name</label>
+            <input type="text" id="movieNameInput"><br><br>
+            <label>Image URL</label>
+            <input type="text" id="imgUrlInput"><br><br>
+            <label>Movie Link</label>
+            <input type="text" id="movieLinkInput"><br><br>
+            <label>Rating</label>
+            <select id="ratingInput">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> /10<br><br>
+            <label>Synopsis</label>
+            <input type="text" id="synopsisInput"><br><br><br>
+            <button id="submitBtn">Submit</button>
+        </form>
+    </main>
+    <footer></footer>    
+
+
+    <script src="./newMovie.js"></script>
+</body>
+</html>

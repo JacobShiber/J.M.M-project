@@ -59,6 +59,12 @@ header {
     font-size: 35px;
 }
 
+#mainContentHeader a {
+    text-decoration: none;
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 25px;
+    color: black;
+}
 
 #mainContentHeader div label {
     font-size: 25px;
@@ -147,4 +153,14 @@ header {
     position: relative;
     left: -25px;
     z-index: 1000;
+}
+
+.btnContainer {
+    display: flex;
+}
+
+#deleteBtn {
+    margin-left: 80px;
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 18px;
 }

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#headerLogoImg {
+    width: 10%;
+}
+
+
+#headerTechLink {
+    text-decoration: none;
+    color: black;
+    font-size: 45px;
+    font-family: 'Red Hat Mono', monospace;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+#searchBar {
+    width: 25%;
+    height: 20px;
+}
+
+
+#navLinkList {
+    display: flex;
+    list-style: none;
+}
+
+
+#navLinkList a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 25px;
+    margin-right: 35px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+
+#addingForm {
+    font-family: 'Red Hat Mono', monospace;
+    border: 1px solid black;
+    width: 25%;
+    padding: 2%;
+    margin-left: 32%;
+    margin-top: 2.5%;
+}
+
+
+#addingForm input {
+    margin-left: 30px;
+}
+
+#submitBtn {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 16px;
+    background-color: white;
+    padding: 1%;
+    margin-left: 37.5%;
+}

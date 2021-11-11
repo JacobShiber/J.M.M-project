@@ -28,6 +28,6 @@ printDataFromApi(api, allMoviesEP)
                 <td class = "infoDetails">${movie.image}</td>
                 <td class = "infoDetails" >${movie.linkToMovie}</td>
                 <td class = "infoDetails">${movie.rating}</td>`;
-            
         }
+        
     })

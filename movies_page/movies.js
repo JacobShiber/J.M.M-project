@@ -62,11 +62,14 @@ printDataFromApi(api, allMoviesEP)
 
         if (res.data) {
             for (let movie of res.data) {
+                let specificId = movie._id;
                 moviesDisplay.innerHTML += `<div class = "movieData">
                 <img src="${movie.image}" alt="moviePic"><br>
                 <h3>${movie.movieName}</h3><br>
                 <p>Rating ${movie.rating}/10</p><br>
-                <button id = "expendBtn"  onclick = getMovieById("${movie._id}")><a href="./movies.html#singleMovieDisplay">Expend</a></button>
+                <div class = "btnContainer">
+                <button id = "expendBtn"  onclick = getMovieById("${movie._id}")><a href="./movies.html#singleMovieDisplay">Expend</a></button> <button id = "deleteBtn" onclick = "deleteMovie('${specificId}')">Del</button>
+                </div>
                 </div>`
             }
         } else {
@@ -161,6 +164,27 @@ searchBar.oninput = () => {
             moviesDisplay.innerHTML += `<img src = "../media/broken_camera.png">`
         }
     })
+}
+
+
+function deleteMovie(id) {
+    let confirmCheck = confirm('Are you sure you want to delete this movie?');
+    if (confirmCheck == true) {
+        options = {
+            method: 'DELETE'
+        }
+        asyncDelete = async () => {
+            try {
+                return await fetch(`http://moviesmern.herokuapp.com/movies/movie/${id}`, options)
+            } catch (error) {
+                return error;
+            };
+        }
+    }
+
+    asyncDelete()
+    .then(res => console.log(res))
+
 }
 
 
